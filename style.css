@@ -241,7 +241,7 @@ h1 {
       text-align: left;
       font-family: 'Arial';
       font-weight: bold;
-      font-size: 1.5em;
+      font-size: 3em;
     }
 
     #projectList {
@@ -251,23 +251,23 @@ h1 {
       text-align: left;
       font-family: 'Arial';
       font-weight: bold;
-      font-size: 1em;
+      font-size: 1.5em;
     }
 
     #social{
       margin-left: 20px;
       margin-right: 20px;
       font-family: 'Arial';
-      font-size: 1em;
+      font-size: 1.5em;
       background-color: rgba(0, 0, 0, 0.3);
       bottom: auto;
     }
 
     #page {
-      font-size: 1em;
+      font-size: 1.5em;
     }
 
     #text{
-      font-size: 1em;
+      font-size: 1.5em;
     }
 
