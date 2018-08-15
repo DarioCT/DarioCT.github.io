@@ -231,3 +231,43 @@ h1 {
       width: 100%;
     }   
 }
+
+@media only screen and (max-width: 1000px) {
+
+    h1 {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+      text-align: left;
+      font-family: 'Arial';
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    #projectList {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 40px;
+      text-align: left;
+      font-family: 'Arial';
+      font-weight: bold;
+      font-size: 0.5em;
+    }
+
+    #social{
+      margin-left: 20px;
+      margin-right: 20px;
+      font-family: 'Arial';
+      font-size: 0.5em;
+      background-color: rgba(0, 0, 0, 0.3);
+      bottom: auto;
+    }
+
+    #page {
+      font-size: 0.5em;
+    }
+
+    #text{
+      font-size: 0.5em;
+    }
+
