@@ -274,37 +274,8 @@ h2 {
   
   
     #mainSkills{
-      margin-right: 30px;
-      margin-left: 30px;
-    }
-
-    #skillOne{
-      width: 100%;
-      margin-left: 30px;
-      float: right;
-    }
-
-    #skillTwo{
-      width: 100%;
-      margin-left: 30px;
-      float: right;
-    }
-
-    #skillThree{
-      width: 100%;
-      margin-left: 30px;
-      float: right;
-    }
-
-    #skillFour{
-      width: 100%;
-      margin-left: 30px;
-      float: right;
-    }
-
-    #iconImage{
-      width: 100%;
-    }   
+      visibility: hidden;
+    }  
 }
 
 @media only screen and (max-width: 1400px) {
