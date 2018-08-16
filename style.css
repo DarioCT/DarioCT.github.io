@@ -280,18 +280,23 @@ h2 {
 
     #skillOne{
       width: 100%;
+      margin-left: 30px;
+      
     }
 
     #skillTwo{
       width: 100%;
+      margin-left: 30px;
     }
 
     #skillThree{
       width: 100%;
+      margin-left: 30px;
     }
 
     #skillFour{
       width: 100%;
+      margin-left: 30px;
     }
 
     #iconImage{
