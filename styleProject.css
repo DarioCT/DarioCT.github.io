@@ -244,6 +244,7 @@ h2 {
       font-size: 1em;
       float: left;
       display: inline-block;
+      text-align: left;
     }
 
     #imageSpace {
@@ -268,8 +269,20 @@ h2 {
       font-family: 'Arial';
       font-size: 0.5em;
       color: #262626;
-      text-align: justify;
+      text-align: left;
       float: left;
+    }
+  
+    #text2{
+      text-align: left;
+    }
+
+    h2 {
+      text-align: left;
+    }
+
+   #textKeyWords{
+      text-align: left;
     }
 
     #skillOne{
