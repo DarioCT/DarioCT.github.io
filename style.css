@@ -15,14 +15,17 @@
   left: 0;
 }
 
+#menuTwo {
+  margin-top: 50px;
+}
+
 h1 {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   font-family: 'Arial';
   font-size: 2.5em;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -39,12 +42,12 @@ h1 {
 #projects {
   text-decoration: none;
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #projects:hover {
     color: #0a0d2b;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #social{
@@ -55,8 +58,8 @@ h1 {
   font-size: 1em;
   bottom: 0px;
   position:absolute;
-  width: 89%;
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 91%;
+  background-color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   color: white;
 }
