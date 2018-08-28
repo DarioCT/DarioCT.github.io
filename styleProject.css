@@ -39,6 +39,16 @@ h1 {
   font-size: 1.2em;
 }
 
+#projectList2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 130px;
+  text-align: left;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 #projects {
   text-decoration: none;
   color: white;
