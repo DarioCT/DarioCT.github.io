@@ -239,7 +239,7 @@ h2 {
     }
 
     #page {
-      width: 100%;
+      min-width: 100%;
       margin-top: 610px;
       margin-left: 0px;
       margin-right: 0px;
@@ -274,6 +274,8 @@ h2 {
       color: #262626;
       text-align: left;
       float: left;
+      margin-left:0px;
+      margin-right:0px;
     }
   
   
