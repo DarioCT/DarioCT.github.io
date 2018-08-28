@@ -273,7 +273,6 @@ h2 {
       margin-left: 0px;
       margin-right: 0px;
       font-family: 'Arial';
-      font-size: 1em;
       float: left;
       display: inline-block;
       text-align: left;
@@ -303,18 +302,28 @@ h2 {
       color: #262626;
       text-align: left;
       float: left;
+      margin-left: 0px;
+      margin-right: 0px;
     }
   
     #text2{
       text-align: left;
+      margin-left: 0px;
+      margin-right: 0px;
+      font-size: 0.5em;
     }
 
     h2 {
       text-align: left;
+      margin-left: 0px;
+      margin-right: 0px;    
     }
 
    #textKeyWords{
       text-align: left;
+      margin-left: 0px;
+      margin-right: 0px;
+     font-size: 0.5em;
     }
 
     #skillOne{
