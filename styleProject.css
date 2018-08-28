@@ -40,8 +40,6 @@ h1 {
 }
 
 #projectList2 {
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 130px;
   text-align: left;
   font-family: 'Arial';
@@ -59,6 +57,8 @@ h1 {
   text-decoration: none;
   color: white;
   background-color: #647e9f;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 #projects:hover {
@@ -251,7 +251,6 @@ h2 {
       margin-top: 30px;
       text-align: left;
       font-family: 'Arial';
-      font-size: 0.5em;
     }
   
     #social{
