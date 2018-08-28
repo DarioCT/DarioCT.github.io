@@ -244,13 +244,14 @@ h2 {
       font-size: 0.8em;
       visibility: hidden;
     }
+
    #projectList2 {
       margin-left: 0px;
       margin-right: 0px;
-      margin-top: 40px;
+      margin-top: 30px;
       text-align: left;
       font-family: 'Arial';
-      font-size: 0.4em;
+      font-size: 0.5em;
     }
   
     #social{
@@ -264,6 +265,9 @@ h2 {
     }
 
     #page {
+      min-width: 100%;
+      font-family: 'Arial';
+      font-size: 0.5em;
       width: 100%;
       margin-top: 50px;
       margin-left: 0px;
