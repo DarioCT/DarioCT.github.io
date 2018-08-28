@@ -246,19 +246,18 @@ h2 {
       font-family: 'Arial';
       font-size: 0.5em;
       float: left;
-      text-align: left;
-      display:inline-block;    
+      text-align: left; 
     }
 
     #imageSpace {
-      max-height: 20%;
+      max-height: 25%;
       min-width: 100%;
       float:none;
+      padding:20px;
     }
 
 
-    #image {
-      margin-top: 20px;
+    #image { 
       display:block;  
       margin:auto;
       max-height: 50%;
