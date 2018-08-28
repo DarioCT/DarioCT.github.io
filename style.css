@@ -253,6 +253,7 @@ h2 {
     #imageSpace {
       max-height: 20%;
       min-width: 100%;
+      float:none;
     }
 
 
@@ -263,6 +264,7 @@ h2 {
       max-height: 50%;
       max-width: 50%;
       border-radius: 50%;
+      float:none;
     }
 
     #text{
