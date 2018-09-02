@@ -68,6 +68,11 @@ h1 {
   margin-left: 20px;
 }
 
+#icons {
+  float: right;
+  margin-right: 5px;
+}
+
 #page {
   max-width: 70%;
   max-height: 100%;
