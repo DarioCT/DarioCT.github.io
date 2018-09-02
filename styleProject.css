@@ -292,21 +292,25 @@ h2 {
       text-align: left;
     }
 
-    #imageSpace {
-      max-height: 20%;
-      width: 100%;
-      float: right;
+     #imageSpace {
+      max-height: 25%;
+      min-width: 100%;
+      float:none;
+      padding:20px;
+      margin-left: 0px;
+      margin-right: 0px;
     }
 
 
-    #image {
-      margin-top: 20px;
-      margin: 20px;
-      float: right;
+    #image { 
+      display:block;  
+      margin:auto;
       max-height: 50%;
       max-width: 50%;
       border-radius: 50%;
+      float:none;
     }
+
 
     #text{
       width: 100%;
