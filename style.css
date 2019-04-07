@@ -1,6 +1,6 @@
 #wraper {
-  height: 100%; 
-  width: 100%; 
+  height: 100%;
+  width: 100%;
 }
 
 #menu {
@@ -8,15 +8,15 @@
   background-color: #0a0d2b;
   font-family: 'Arial';
   color: white;
-  height: 100%; 
-  width: 30%; 
-  position:absolute; 
-  top: 0; 
+  height: 100%;
+  width: 30%;
+  position:absolute;
+  top: 0;
   left: 0;
 }
 
 #menuTwo {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
 #projectList {
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 70px;
+  margin-top: 40px;
   text-align: left;
   font-family: 'Arial';
   font-weight: bold;
@@ -218,7 +218,7 @@ h2 {
       background-image: url("officebluelightMLnote4.jpg");
       background-color: #0a0d2b;
       font-family: 'Arial';
-      color: white; 
+      color: white;
       width: 100%;
       height: 600px;
     }
@@ -260,7 +260,7 @@ h2 {
       font-family: 'Arial';
       font-size: 0.5em;
       float: left;
-      text-align: left; 
+      text-align: left;
     }
 
     #imageSpace {
@@ -273,8 +273,8 @@ h2 {
     }
 
 
-    #image { 
-      display:block;  
+    #image {
+      display:block;
       margin:auto;
       max-height: 50%;
       max-width: 50%;
@@ -293,11 +293,11 @@ h2 {
       margin-left:0px;
       margin-right:0px;
     }
-  
-  
+
+
     #mainSkills{
       visibility: hidden;
-    }  
+    }
 }
 
 @media only screen and (max-width: 1400px) {

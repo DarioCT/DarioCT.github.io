@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11822,7 +11822,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<head> <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<head> <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136843203-1"></script>
@@ -11838,14 +11838,14 @@ div#notebook {
 <h style = 'font-family: 'Roboto', sans-serif;'>
 
     <h2 style=" font-size: 7em; color:black; float:left;"> World Happiness Report </h2>
-    
-    
+
+
     <h3 style=" font-size: 1.5em; color:black; float:left;"> World Happiness Report is a landmark survey of the state of global happiness that ranks 156 countries by how happy their citizens perceive themselves to be. The report is produced by the United Nations Sustainable Development Solutions Network. </h3>
     <h3 style=" font-size: 1.5em; color:black; float:left;"> The report shows that the quality of people’s lives can be coherently, reliably, and validly assessed by a variety of subjective well-being measures, collectively referred to then and in subsequent reports as happiness. </h3>
     <h3 style=" font-size: 1.5em; color:black; float:left;"> This website provides animated change of key features related happiness from 2006 to 2018. The features are Log GDP per capita, Social support, Healthy life expectancy at birth, Freedom to make life choices, Generosity, and Perceptions of corruption. </h3>
     <h3 style=" font-size: 1.5em; color:black; float:left;"> Taken together, these six variables explain almost three-quarters of the variation in national annual average happiness scores among countries.   </h3>
-    
-    
+
+
 </h>
 
 
@@ -11865,7 +11865,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;style&gt;&quot;</span>
-    <span class="o">+</span> <span class="s2">&quot;#notebook { padding-top:0px !important; } &quot;</span> 
+    <span class="o">+</span> <span class="s2">&quot;#notebook { padding-top:0px !important; } &quot;</span>
     <span class="o">+</span> <span class="s2">&quot;.container { width:100% !important; justify:right !important; margin-left:0px; padding-left:50px !important; } &quot;</span>
     <span class="o">+</span> <span class="s2">&quot;.end_space { min-height:0px !important; } &quot;</span>
     <span class="o">+</span> <span class="s2">&quot;&lt;/style&gt;&quot;</span><span class="p">))</span>
@@ -11920,7 +11920,7 @@ div#notebook {
 <span class="sd">    + &quot;.end_space { min-height:0px !important; } &quot;</span>
 <span class="sd">    + &quot;&lt;/style&gt;&quot;))</span>
 <span class="sd">&#39;&#39;&#39;</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="c1"># World Happiness Report data import</span>
@@ -11943,15 +11943,15 @@ div#notebook {
 
 
 <span class="k">def</span> <span class="nf">bubbleplot</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span> <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">time_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>   
-               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
-               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">time_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">x_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39; Makes the animated and interactive bubble charts from a given dataset.&#39;&#39;&#39;</span>
-    
+
     <span class="c1"># Set category_column as None and update it as color_column only in case</span>
     <span class="c1"># color_column is not None and categorical, in which case set color_column as None</span>
     <span class="n">category_column</span> <span class="o">=</span> <span class="kc">None</span>
@@ -11959,7 +11959,7 @@ div#notebook {
         <span class="k">if</span> <span class="n">dataset</span><span class="p">[</span><span class="n">color_column</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="o">.</span><span class="n">name</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="s1">&#39;bool&#39;</span><span class="p">]:</span>
             <span class="n">category_column</span> <span class="o">=</span> <span class="n">color_column</span>
             <span class="n">color_column</span> <span class="o">=</span> <span class="kc">None</span>
-        
+
     <span class="c1"># Set the variables for making the grid</span>
     <span class="k">if</span> <span class="n">time_column</span><span class="p">:</span>
         <span class="n">years</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">time_column</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
@@ -11967,23 +11967,23 @@ div#notebook {
         <span class="n">years</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="n">show_slider</span> <span class="o">=</span> <span class="kc">False</span>
         <span class="n">show_button</span> <span class="o">=</span> <span class="kc">False</span>
-        
+
     <span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">]</span>
-    
+
     <span class="k">if</span> <span class="n">z_column</span><span class="p">:</span>
         <span class="n">column_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">z_column</span><span class="p">)</span>
         <span class="n">axes3D</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">axes3D</span> <span class="o">=</span> <span class="kc">False</span>
-    
+
     <span class="n">column_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bubble_column</span><span class="p">)</span>
-    
+
     <span class="k">if</span> <span class="n">size_column</span><span class="p">:</span>
         <span class="n">column_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">size_column</span><span class="p">)</span>
-    
+
     <span class="k">if</span> <span class="n">color_column</span><span class="p">:</span>
         <span class="n">column_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">color_column</span><span class="p">)</span>
-        
+
     <span class="c1"># Make the grid</span>
     <span class="k">if</span> <span class="n">category_column</span><span class="p">:</span>
         <span class="n">categories</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">category_column</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -11991,31 +11991,31 @@ div#notebook {
         <span class="n">grid</span> <span class="o">=</span> <span class="n">make_grid_with_categories</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">column_names</span><span class="p">,</span> <span class="n">time_column</span><span class="p">,</span> <span class="n">category_column</span><span class="p">,</span> <span class="n">years</span><span class="p">,</span> <span class="n">categories</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">show_legend</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">showlegend</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="k">else</span><span class="p">:</span> 
+        <span class="k">else</span><span class="p">:</span>
             <span class="n">showlegend</span> <span class="o">=</span> <span class="n">show_legend</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">col_name_template</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">+</span><span class="si">{}</span><span class="s1">_grid&#39;</span>
         <span class="n">grid</span> <span class="o">=</span> <span class="n">make_grid</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">column_names</span><span class="p">,</span> <span class="n">time_column</span><span class="p">,</span> <span class="n">years</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">show_legend</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">showlegend</span> <span class="o">=</span> <span class="kc">False</span>
-        <span class="k">else</span><span class="p">:</span> 
+        <span class="k">else</span><span class="p">:</span>
             <span class="n">showlegend</span> <span class="o">=</span> <span class="n">show_legend</span>
-        
+
     <span class="c1"># Set the layout</span>
     <span class="k">if</span> <span class="n">show_slider</span><span class="p">:</span>
         <span class="n">slider_scale</span> <span class="o">=</span> <span class="n">years</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">slider_scale</span> <span class="o">=</span> <span class="kc">None</span>
-                
-    <span class="n">figure</span><span class="p">,</span> <span class="n">sliders_dict</span> <span class="o">=</span> <span class="n">set_layout</span><span class="p">(</span><span class="n">x_title</span><span class="p">,</span> <span class="n">y_title</span><span class="p">,</span> <span class="n">z_title</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> 
+
+    <span class="n">figure</span><span class="p">,</span> <span class="n">sliders_dict</span> <span class="o">=</span> <span class="n">set_layout</span><span class="p">(</span><span class="n">x_title</span><span class="p">,</span> <span class="n">y_title</span><span class="p">,</span> <span class="n">z_title</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span>
                                 <span class="n">x_logscale</span><span class="p">,</span> <span class="n">y_logscale</span><span class="p">,</span> <span class="n">z_logscale</span><span class="p">,</span> <span class="n">axes3D</span><span class="p">,</span>
                                 <span class="n">show_slider</span><span class="p">,</span> <span class="n">slider_scale</span><span class="p">,</span> <span class="n">show_button</span><span class="p">,</span> <span class="n">showlegend</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
-    
+
     <span class="k">if</span> <span class="n">size_column</span><span class="p">:</span>
         <span class="n">sizeref</span> <span class="o">=</span> <span class="mf">2.</span><span class="o">*</span><span class="nb">max</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">size_column</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="n">scale_bubble</span><span class="o">*</span><span class="mi">80</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># Set the reference size for the bubbles</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">sizeref</span> <span class="o">=</span> <span class="kc">None</span>
-        
+
     <span class="c1"># Add the frames</span>
     <span class="k">if</span> <span class="n">category_column</span><span class="p">:</span>
         <span class="c1"># Add the base frame</span>
@@ -12025,33 +12025,33 @@ div#notebook {
                 <span class="n">col_name_template_year</span> <span class="o">=</span> <span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="p">{},</span> <span class="p">{})</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">col_name_template_year</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">+</span><span class="si">{}</span><span class="s1">_grid&#39;</span>
-            <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span> 
-                              <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span> 
+            <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span>
+                              <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span>
                               <span class="n">sizeref</span><span class="p">,</span> <span class="n">scale_bubble</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="p">,</span>
                               <span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">z_column</span><span class="p">:</span>
                 <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;scatter3d&#39;</span>
             <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
-           
+
         <span class="c1"># Add time frames</span>
         <span class="k">if</span> <span class="n">time_column</span><span class="p">:</span> <span class="c1"># Only if time_column is not None</span>
             <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
                 <span class="n">frame</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)}</span>
                 <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
                     <span class="n">col_name_template_year</span> <span class="o">=</span> <span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="p">{},</span> <span class="p">{})</span>
-                    <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span> 
-                                      <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span> 
+                    <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span>
+                                      <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span>
                                       <span class="n">sizeref</span><span class="p">,</span> <span class="n">scale_bubble</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="p">,</span>
                                       <span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">)</span>
                     <span class="k">if</span> <span class="n">z_column</span><span class="p">:</span>
                         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;scatter3d&#39;</span>
                     <span class="n">frame</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
 
-                <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;frames&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span> 
+                <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;frames&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
 
                 <span class="k">if</span> <span class="n">show_slider</span><span class="p">:</span>
                     <span class="n">add_slider_steps</span><span class="p">(</span><span class="n">sliders_dict</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span>
-                
+
     <span class="k">else</span><span class="p">:</span>
         <span class="c1"># Add the base frame</span>
         <span class="k">if</span> <span class="n">time_column</span><span class="p">:</span>
@@ -12059,37 +12059,37 @@ div#notebook {
             <span class="n">col_name_template_year</span> <span class="o">=</span> <span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="p">{})</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">col_name_template_year</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">_grid&#39;</span>
-        <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span> 
-                          <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span> 
+        <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span>
+                          <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span>
                           <span class="n">sizeref</span><span class="p">,</span> <span class="n">scale_bubble</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="p">,</span>
                           <span class="n">color_column</span><span class="p">,</span> <span class="n">colorscale</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">z_column</span><span class="p">:</span>
                 <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;scatter3d&#39;</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
-        
+
         <span class="c1"># Add time frames</span>
         <span class="k">if</span> <span class="n">time_column</span><span class="p">:</span> <span class="c1"># Only if time_column is not None</span>
             <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
                 <span class="n">col_name_template_year</span> <span class="o">=</span> <span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="p">{})</span>
                 <span class="n">frame</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)}</span>
-                <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span> 
-                                  <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span> 
+                <span class="n">trace</span> <span class="o">=</span> <span class="n">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template_year</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span>
+                                  <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="p">,</span> <span class="n">size_column</span><span class="p">,</span>
                                   <span class="n">sizeref</span><span class="p">,</span> <span class="n">scale_bubble</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="p">,</span>
                                   <span class="n">color_column</span><span class="p">,</span> <span class="n">colorscale</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="p">)</span>
                 <span class="k">if</span> <span class="n">z_column</span><span class="p">:</span>
                     <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;scatter3d&#39;</span>
                 <span class="n">frame</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
-                <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;frames&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span> 
+                <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;frames&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
                 <span class="k">if</span> <span class="n">show_slider</span><span class="p">:</span>
-                    <span class="n">add_slider_steps</span><span class="p">(</span><span class="n">sliders_dict</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span> 
-    
+                    <span class="n">add_slider_steps</span><span class="p">(</span><span class="n">sliders_dict</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span>
+
     <span class="c1"># Set ranges for the axes</span>
     <span class="k">if</span> <span class="n">x_range</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">x_range</span> <span class="o">=</span> <span class="n">set_range</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">x_column</span><span class="p">],</span> <span class="n">x_logscale</span><span class="p">)</span> 
-    
+        <span class="n">x_range</span> <span class="o">=</span> <span class="n">set_range</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">x_column</span><span class="p">],</span> <span class="n">x_logscale</span><span class="p">)</span>
+
     <span class="k">if</span> <span class="n">y_range</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">y_range</span> <span class="o">=</span> <span class="n">set_range</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">y_column</span><span class="p">],</span> <span class="n">y_logscale</span><span class="p">)</span>
-    
+
     <span class="k">if</span> <span class="n">axes3D</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">z_range</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">z_range</span> <span class="o">=</span> <span class="n">set_range</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">z_column</span><span class="p">],</span> <span class="n">z_logscale</span><span class="p">)</span>
@@ -12099,17 +12099,17 @@ div#notebook {
     <span class="k">else</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;xaxis&#39;</span><span class="p">][</span><span class="s1">&#39;range&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_range</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;yaxis&#39;</span><span class="p">][</span><span class="s1">&#39;range&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_range</span>
-        
+
     <span class="k">if</span> <span class="n">show_slider</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;sliders&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">sliders_dict</span><span class="p">]</span>
-     
+
     <span class="k">return</span> <span class="n">figure</span>
 
 <span class="k">def</span> <span class="nf">make_grid</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">column_names</span><span class="p">,</span> <span class="n">time_column</span><span class="p">,</span> <span class="n">years</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Makes the grid for the plot as a pandas DataFrame by-passing the use of `plotly.grid_objs`</span>
 <span class="sd">    that is unavailable in the offline mode for `plotly`. The grids are designed using the `col_name_template`</span>
 <span class="sd">    from the `column_names` of the `dataset`.&#39;&#39;&#39;</span>
-    
+
     <span class="n">grid</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">time_column</span><span class="p">:</span>
         <span class="n">col_name_template</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">+</span><span class="si">{}</span><span class="s1">_grid&#39;</span>
@@ -12128,14 +12128,14 @@ div#notebook {
         <span class="k">for</span> <span class="n">col_name</span> <span class="ow">in</span> <span class="n">column_names</span><span class="p">:</span>
             <span class="c1"># Each column name is unique</span>
             <span class="n">grid</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">col_name</span><span class="p">]),</span> <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="n">col_name</span> <span class="o">+</span> <span class="s1">&#39;_grid&#39;</span><span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        
+
     <span class="k">return</span> <span class="n">grid</span>
 
 <span class="k">def</span> <span class="nf">make_grid_with_categories</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">column_names</span><span class="p">,</span> <span class="n">time_column</span><span class="p">,</span> <span class="n">category_column</span><span class="p">,</span> <span class="n">years</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">categories</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Makes the grid for the plot as a pandas DataFrame by-passing the use of plotly.grid_objs</span>
 <span class="sd">    that is unavailable in the offline mode for plotly. The grids are designed using the `col_name_template`</span>
 <span class="sd">    from the `column_names` of the `dataset` using the `category_column` for catergories.&#39;&#39;&#39;</span>
-    
+
     <span class="n">grid</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">categories</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">categories</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">category_column</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
@@ -12143,7 +12143,7 @@ div#notebook {
         <span class="n">col_name_template</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">+</span><span class="si">{}</span><span class="s1">+</span><span class="si">{}</span><span class="s1">_grid&#39;</span>
         <span class="k">if</span> <span class="n">years</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">years</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">time_column</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-            
+
         <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
                 <span class="n">dataset_by_year_and_cat</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[(</span><span class="n">dataset</span><span class="p">[</span><span class="n">time_column</span><span class="p">]</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="n">category_column</span><span class="p">]</span> <span class="o">==</span> <span class="n">category</span><span class="p">)]</span>
@@ -12151,7 +12151,7 @@ div#notebook {
                     <span class="c1"># Each column name is unique</span>
                     <span class="n">temp</span> <span class="o">=</span> <span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">col_name</span><span class="p">,</span> <span class="n">category</span><span class="p">)</span>
                     <span class="k">if</span> <span class="n">dataset_by_year_and_cat</span><span class="p">[</span><span class="n">col_name</span><span class="p">]</span><span class="o">.</span><span class="n">size</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-                        <span class="n">grid</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">dataset_by_year_and_cat</span><span class="p">[</span><span class="n">col_name</span><span class="p">]),</span> <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="n">temp</span><span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+                        <span class="n">grid</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">dataset_by_year_and_cat</span><span class="p">[</span><span class="n">col_name</span><span class="p">]),</span> <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="n">temp</span><span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">col_name_template</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">+</span><span class="si">{}</span><span class="s1">_grid&#39;</span>
         <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
@@ -12160,77 +12160,77 @@ div#notebook {
                 <span class="c1"># Each column name is unique</span>
                 <span class="n">temp</span> <span class="o">=</span> <span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col_name</span><span class="p">,</span> <span class="n">category</span><span class="p">)</span>
                 <span class="k">if</span> <span class="n">dataset_by_cat</span><span class="p">[</span><span class="n">col_name</span><span class="p">]</span><span class="o">.</span><span class="n">size</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-                        <span class="n">grid</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">dataset_by_cat</span><span class="p">[</span><span class="n">col_name</span><span class="p">]),</span> <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="n">temp</span><span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
-        
+                        <span class="n">grid</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">dataset_by_cat</span><span class="p">[</span><span class="n">col_name</span><span class="p">]),</span> <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="n">temp</span><span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
     <span class="k">return</span> <span class="n">grid</span>
 
- 
+
 <span class="k">def</span> <span class="nf">set_layout</span><span class="p">(</span><span class="n">x_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-            <span class="n">x_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">axes3D</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+            <span class="n">x_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">axes3D</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
             <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">slider_scale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
             <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Sets the layout for the figure.&#39;&#39;&#39;</span>
-    
+
     <span class="c1"># Define the figure object as a dictionary</span>
     <span class="n">figure</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">[],</span>
         <span class="s1">&#39;layout&#39;</span><span class="p">:</span> <span class="p">{},</span>
         <span class="s1">&#39;frames&#39;</span><span class="p">:</span> <span class="p">[]</span>
     <span class="p">}</span>
-    
+
     <span class="c1"># Start with filling the layout first</span>
     <span class="k">if</span> <span class="n">axes3D</span><span class="p">:</span>
-        <span class="n">figure</span> <span class="o">=</span> <span class="n">set_3Daxes</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">x_title</span><span class="p">,</span> <span class="n">y_title</span><span class="p">,</span> <span class="n">z_title</span><span class="p">,</span> 
+        <span class="n">figure</span> <span class="o">=</span> <span class="n">set_3Daxes</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">x_title</span><span class="p">,</span> <span class="n">y_title</span><span class="p">,</span> <span class="n">z_title</span><span class="p">,</span>
             <span class="n">x_logscale</span><span class="p">,</span> <span class="n">y_logscale</span><span class="p">,</span> <span class="n">z_logscale</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">figure</span> <span class="o">=</span> <span class="n">set_2Daxes</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">x_title</span><span class="p">,</span> <span class="n">y_title</span><span class="p">,</span> <span class="n">x_logscale</span><span class="p">,</span> <span class="n">y_logscale</span><span class="p">)</span>
-        
-    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">title</span>    
+
+    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">title</span>
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;hovermode&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;closest&#39;</span>
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;showlegend&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">show_legend</span>
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;margin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
     <span class="c1">#figure[&#39;layout&#39;][&#39;yaxis&#39;][&#39;autorange&#39;] = True</span>
     <span class="c1">#figure[&#39;layout&#39;][&#39;xaxis&#39;][&#39;autorange&#39;] = True</span>
-    
+
     <span class="k">if</span> <span class="n">width</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;width&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">width</span>
     <span class="k">if</span> <span class="n">height</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;height&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">height</span>
-    
+
     <span class="c1"># Add slider for the time scale</span>
-    <span class="k">if</span> <span class="n">show_slider</span><span class="p">:</span> 
+    <span class="k">if</span> <span class="n">show_slider</span><span class="p">:</span>
         <span class="n">sliders_dict</span> <span class="o">=</span> <span class="n">add_slider</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">slider_scale</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">sliders_dict</span> <span class="o">=</span> <span class="p">{}</span>
-    
+
     <span class="c1"># Add a pause-play button</span>
     <span class="k">if</span> <span class="n">show_button</span><span class="p">:</span>
         <span class="n">add_button</span><span class="p">(</span><span class="n">figure</span><span class="p">)</span>
-        
+
     <span class="c1"># Return the figure object</span>
     <span class="k">return</span> <span class="n">figure</span><span class="p">,</span> <span class="n">sliders_dict</span>
 
 <span class="k">def</span> <span class="nf">set_2Daxes</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">x_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Sets 2D axes&#39;&#39;&#39;</span>
-    
+
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;xaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">x_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
-    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;yaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">y_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span> 
+    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;yaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">y_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
 
     <span class="k">if</span> <span class="n">x_logscale</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;xaxis&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;log&#39;</span>
     <span class="k">if</span> <span class="n">y_logscale</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;yaxis&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;log&#39;</span>
-        
+
     <span class="k">return</span> <span class="n">figure</span>
-        
-<span class="k">def</span> <span class="nf">set_3Daxes</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">x_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+
+<span class="k">def</span> <span class="nf">set_3Daxes</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">x_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="n">x_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Sets 3D axes&#39;&#39;&#39;</span>
-    
+
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;xaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">x_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
-    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;yaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">y_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span> 
-    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;zaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">z_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span> 
+    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;yaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">y_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+    <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;zaxis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">z_title</span><span class="p">,</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
 
     <span class="k">if</span> <span class="n">x_logscale</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;xaxis&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;log&#39;</span>
@@ -12238,12 +12238,12 @@ div#notebook {
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;yaxis&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;log&#39;</span>
     <span class="k">if</span> <span class="n">z_logscale</span><span class="p">:</span>
         <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;scene&#39;</span><span class="p">][</span><span class="s1">&#39;zaxis&#39;</span><span class="p">][</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;log&#39;</span>
-        
+
     <span class="k">return</span> <span class="n">figure</span>
-        
+
 <span class="k">def</span> <span class="nf">add_slider</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">slider_scale</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Adds slider for animation&#39;&#39;&#39;</span>
-    
+
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;sliders&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">[</span>
             <span class="s1">&#39;slider.value&#39;</span><span class="p">,</span> <span class="p">{</span>
@@ -12256,7 +12256,7 @@ div#notebook {
         <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="n">slider_scale</span><span class="p">,</span>
         <span class="s1">&#39;visible&#39;</span><span class="p">:</span> <span class="kc">True</span>
     <span class="p">}</span>
-    
+
     <span class="n">sliders_dict</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;active&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="s1">&#39;yanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;top&#39;</span><span class="p">,</span>
@@ -12274,12 +12274,12 @@ div#notebook {
         <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="s1">&#39;steps&#39;</span><span class="p">:</span> <span class="p">[]</span>
     <span class="p">}</span>
-    
+
     <span class="k">return</span> <span class="n">sliders_dict</span>
 
 <span class="k">def</span> <span class="nf">add_slider_steps</span><span class="p">(</span><span class="n">sliders_dict</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Adds the slider steps.&#39;&#39;&#39;</span>
-    
+
     <span class="n">slider_step</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">[</span><span class="n">year</span><span class="p">],</span>
         <span class="p">{</span><span class="s1">&#39;frame&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;duration&#39;</span><span class="p">:</span> <span class="n">frame_duration</span><span class="p">,</span> <span class="s1">&#39;redraw&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
@@ -12289,10 +12289,10 @@ div#notebook {
      <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">),</span>
      <span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;animate&#39;</span><span class="p">}</span>
     <span class="n">sliders_dict</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">slider_step</span><span class="p">)</span>
-    
+
 <span class="k">def</span> <span class="nf">add_button</span><span class="p">(</span><span class="n">figure</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Adds the pause-play button for animation&#39;&#39;&#39;</span>
-    
+
     <span class="n">figure</span><span class="p">[</span><span class="s1">&#39;layout&#39;</span><span class="p">][</span><span class="s1">&#39;updatemenus&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">{</span>
             <span class="s1">&#39;buttons&#39;</span><span class="p">:</span> <span class="p">[</span>
@@ -12319,38 +12319,38 @@ div#notebook {
             <span class="s1">&#39;yanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;top&#39;</span>
         <span class="p">}</span>
     <span class="p">]</span>
-    
-<span class="k">def</span> <span class="nf">set_range</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span> 
+
+<span class="k">def</span> <span class="nf">set_range</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39; Finds the axis range for the figure.&#39;&#39;&#39;</span>
-    
+
     <span class="n">val</span> <span class="o">=</span> <span class="n">values</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">val</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="o">~</span><span class="n">val</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
-    
+
     <span class="k">if</span> <span class="n">logscale</span><span class="p">:</span>
         <span class="n">rmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">val</span><span class="p">))</span><span class="o">*</span><span class="mf">0.97</span>
         <span class="n">rmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">val</span><span class="p">))</span><span class="o">*</span><span class="mf">1.04</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">rmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">val</span><span class="p">)</span><span class="o">*</span><span class="mf">0.7</span>
         <span class="n">rmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">val</span><span class="p">)</span><span class="o">*</span><span class="mf">1.4</span>
-        
-    <span class="k">return</span> <span class="p">[</span><span class="n">rmin</span><span class="p">,</span> <span class="n">rmax</span><span class="p">]</span> 
+
+    <span class="k">return</span> <span class="p">[</span><span class="n">rmin</span><span class="p">,</span> <span class="n">rmax</span><span class="p">]</span>
 
 
-<span class="k">def</span> <span class="nf">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span> <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+<span class="k">def</span> <span class="nf">get_trace</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">col_name_template</span><span class="p">,</span> <span class="n">x_column</span><span class="p">,</span> <span class="n">y_column</span><span class="p">,</span> <span class="n">bubble_column</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="n">sizeref</span><span class="o">=</span><span class="mi">200000</span><span class="p">,</span> <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="n">color_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39; Makes the trace for the data as a dictionary object that can be added to the figure or time frames.&#39;&#39;&#39;</span>
-    
+
     <span class="n">trace</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">grid</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grid</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x_column</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
         <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">grid</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grid</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y_column</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
         <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">grid</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grid</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">bubble_column</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
         <span class="s1">&#39;mode&#39;</span><span class="p">:</span> <span class="s1">&#39;markers&#39;</span>
         <span class="p">}</span>
-    
+
     <span class="k">if</span> <span class="n">z_column</span><span class="p">:</span>
         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grid</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">z_column</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        
+
     <span class="k">if</span> <span class="n">size_column</span><span class="p">:</span>
         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
             <span class="s1">&#39;sizemode&#39;</span><span class="p">:</span> <span class="s1">&#39;area&#39;</span><span class="p">,</span>
@@ -12361,24 +12361,24 @@ div#notebook {
         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
             <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="o">*</span><span class="n">scale_bubble</span><span class="p">,</span>
         <span class="p">}</span>
-    
+
     <span class="k">if</span> <span class="n">marker_opacity</span><span class="p">:</span>
         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">][</span><span class="s1">&#39;opacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">marker_opacity</span>
-        
+
     <span class="k">if</span> <span class="n">grid</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grid</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x_column</span><span class="p">,</span> <span class="n">category</span><span class="p">),</span> <span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">][</span><span class="s1">&#39;opacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-        
+
     <span class="k">if</span> <span class="n">marker_border_width</span><span class="p">:</span>
         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">][</span><span class="s1">&#39;line&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;width&#39;</span><span class="p">:</span> <span class="n">marker_border_width</span><span class="p">}</span>
-        
+
     <span class="k">if</span> <span class="n">color_column</span><span class="p">:</span>
             <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">][</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grid</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">col_name_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">color_column</span><span class="p">),</span> <span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
             <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">][</span><span class="s1">&#39;colorbar&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">colorbar_title</span><span class="p">}</span>
             <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">][</span><span class="s1">&#39;colorscale&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">colorscale</span>
-                
+
     <span class="k">if</span> <span class="n">category</span><span class="p">:</span>
         <span class="n">trace</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">category</span>
-        
+
     <span class="k">return</span> <span class="n">trace</span>
 </pre></div>
 
@@ -12466,7 +12466,7 @@ div#notebook {
 <h style = 'font-family: 'Roboto', sans-serif;'>
 
     <h3 style=" font-size: 1.5em; color:black; float:left; width:100%"> &#9654; Happiness and GDP per capita </h3>
-    
+
 </h>
 
 
@@ -12485,11 +12485,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">figure</span> <span class="o">=</span> <span class="n">bubbleplot</span><span class="p">(</span><span class="n">dataset</span> <span class="o">=</span> <span class="n">newdata</span><span class="p">,</span> <span class="n">x_column</span> <span class="o">=</span> <span class="s1">&#39;GDP per capita&#39;</span><span class="p">,</span> <span class="n">y_column</span> <span class="o">=</span> <span class="s1">&#39;Life Ladder&#39;</span><span class="p">,</span> <span class="n">bubble_column</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>   
-               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
-               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">x_title</span><span class="o">=</span><span class="s1">&#39;GDP per capita (USD)&#39;</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="s1">&#39;Happiness&#39;</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
@@ -12563,7 +12563,7 @@ div#notebook {
 <h style = 'font-family: 'Roboto', sans-serif;'>
 
     <h3 style=" font-size: 1.5em; color:black; float:left; width:100%"> &#9654; Social support and GDP per capita  </h3>
-    
+
 </h>
 
 
@@ -12582,11 +12582,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">figure</span> <span class="o">=</span> <span class="n">bubbleplot</span><span class="p">(</span><span class="n">dataset</span> <span class="o">=</span> <span class="n">newdata</span><span class="p">,</span> <span class="n">x_column</span> <span class="o">=</span> <span class="s1">&#39;GDP per capita&#39;</span><span class="p">,</span> <span class="n">y_column</span> <span class="o">=</span> <span class="s1">&#39;Social support&#39;</span><span class="p">,</span> <span class="n">bubble_column</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>   
-               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
-               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">x_title</span><span class="o">=</span><span class="s1">&#39;GDP per capita (USD)&#39;</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="s1">&#39;Social support&#39;</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
@@ -12660,9 +12660,9 @@ div#notebook {
 
 <h style = 'font-family: 'Roboto', sans-serif;'>
 
-    
+
     <h3 style=" font-size: 1.5em; color:black; float:left; width:100%"> &#9654; Healthy life expectancy at birth and GDP per capita  </h3>
-    
+
 </h>
 
 
@@ -12681,11 +12681,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">figure</span> <span class="o">=</span> <span class="n">bubbleplot</span><span class="p">(</span><span class="n">dataset</span> <span class="o">=</span> <span class="n">newdata</span><span class="p">,</span> <span class="n">x_column</span> <span class="o">=</span> <span class="s1">&#39;GDP per capita&#39;</span><span class="p">,</span> <span class="n">y_column</span> <span class="o">=</span> <span class="s1">&#39;Healthy life expectancy at birth&#39;</span><span class="p">,</span> <span class="n">bubble_column</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>   
-               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
-               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">x_title</span><span class="o">=</span><span class="s1">&#39;GDP per capita (USD)&#39;</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="s1">&#39;Healthy life expectancy at birth&#39;</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
@@ -12759,9 +12759,9 @@ div#notebook {
 
 <h style = 'font-family: 'Roboto', sans-serif;'>
 
-    
+
     <h3 style=" font-size: 1.5em; color:black; float:left; width:100%"> &#9654; Freedom to make life choices and GDP per capita </h3>
-    
+
 </h>
 
 
@@ -12780,11 +12780,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">figure</span> <span class="o">=</span> <span class="n">bubbleplot</span><span class="p">(</span><span class="n">dataset</span> <span class="o">=</span> <span class="n">newdata</span><span class="p">,</span> <span class="n">x_column</span> <span class="o">=</span> <span class="s1">&#39;GDP per capita&#39;</span><span class="p">,</span> <span class="n">y_column</span> <span class="o">=</span> <span class="s1">&#39;Freedom to make life choices&#39;</span><span class="p">,</span> <span class="n">bubble_column</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>   
-               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
-               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">x_title</span><span class="o">=</span><span class="s1">&#39;GDP per capita (USD)&#39;</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="s1">&#39;Freedom to make life choices&#39;</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
@@ -12858,9 +12858,9 @@ div#notebook {
 
 <h style = 'font-family: 'Roboto', sans-serif;'>
 
-    
+
     <h3 style=" font-size: 1.5em; color:black; float:left; width:100%"> &#9654; Generosity and GDP per capita </h3>
-    
+
 </h>
 
 
@@ -12879,11 +12879,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">figure</span> <span class="o">=</span> <span class="n">bubbleplot</span><span class="p">(</span><span class="n">dataset</span> <span class="o">=</span> <span class="n">newdata</span><span class="p">,</span> <span class="n">x_column</span> <span class="o">=</span> <span class="s1">&#39;GDP per capita&#39;</span><span class="p">,</span> <span class="n">y_column</span> <span class="o">=</span> <span class="s1">&#39;Generosity&#39;</span><span class="p">,</span> <span class="n">bubble_column</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>   
-               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
-               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">x_title</span><span class="o">=</span><span class="s1">&#39;GDP per capita (USD)&#39;</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="s1">&#39;Generosity&#39;</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
@@ -12957,9 +12957,9 @@ div#notebook {
 
 <h style = 'font-family: 'Roboto', sans-serif;'>
 
-    
+
     <h3 style=" font-size: 1.5em; color:black; float:left; width:100%"> &#9654; Perceptions of corruption and GDP per capita </h3>
-    
+
 </h>
 
 
@@ -12978,11 +12978,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">figure</span> <span class="o">=</span> <span class="n">bubbleplot</span><span class="p">(</span><span class="n">dataset</span> <span class="o">=</span> <span class="n">newdata</span><span class="p">,</span> <span class="n">x_column</span> <span class="o">=</span> <span class="s1">&#39;GDP per capita&#39;</span><span class="p">,</span> <span class="n">y_column</span> <span class="o">=</span> <span class="s1">&#39;Perceptions of corruption&#39;</span><span class="p">,</span> <span class="n">bubble_column</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">z_column</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>   
-               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
-               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">time_column</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">size_column</span><span class="o">=</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">color_column</span><span class="o">=</span><span class="s1">&#39;continent&#39;</span><span class="p">,</span>
+               <span class="n">x_logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">y_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">z_logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">x_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">z_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">x_title</span><span class="o">=</span><span class="s1">&#39;GDP per capita (USD)&#39;</span><span class="p">,</span> <span class="n">y_title</span><span class="o">=</span><span class="s1">&#39;Perceptions of corruption&#39;</span><span class="p">,</span> <span class="n">z_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">scale_bubble</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_opacity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker_border_width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">show_slider</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_button</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
@@ -13060,7 +13060,7 @@ div#notebook {
     <h5> <br> </br></h5>
     <h style="width:100%;">
     <a style=" float: left; text-decoration: None; font-size: 1.5em; color:grey;" href='https://darioct.github.io'>Designed by: DarioCT</a>
-    </h>    
+    </h>
 </h>
 
 
@@ -13113,7 +13113,7 @@ div#notebook {
     <h style="font-size: 1.5em;"> Reference:
     <a style=" text-decoration: None; font-size: 1em; color:grey;" href='https://s3.amazonaws.com/happiness-report/2019/WHR19.pdf'>World Happiness Report 2019</a>
     </h>
-        
+
 </h>
 
 
@@ -13130,7 +13130,7 @@ div#notebook {
   </div>
 </body>
 
- 
+
 
 
 </html>
